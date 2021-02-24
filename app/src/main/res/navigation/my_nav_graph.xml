@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/my_nav_graph"
+    app:startDestination="@id/flashcardListFragment">
+
+    <fragment
+        android:id="@+id/flashcardListFragment"
+        android:name="vojteq.android.flashcards.fragments.FlashcardListFragment"
+        android:label="FlashcardListFragment" >
+        <action
+            android:id="@+id/action_flashcardListFragment_to_flashcardFragment"
+            app:destination="@id/flashcardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flashcardFragment"
+        android:name="vojteq.android.flashcards.fragments.FlashcardFragment"
+        android:label="FlashcardFragment" >
+        <action
+            android:id="@+id/action_flashcardFragment_to_flashcardListFragment"
+            app:destination="@id/flashcardListFragment" />
+    </fragment>
+</navigation>

@@ -9,4 +9,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="button_next_description">button next</string>
+    <string name="button_previous_description">button previous</string>
 </resources>
